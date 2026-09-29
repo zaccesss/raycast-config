@@ -1,0 +1,40 @@
+name: Config Lint
+
+# Checks that every extension line is slug@author or a // comment.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Check extension list format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Check every extension line
+        run: |
+          hit=0
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            case "$line" in
+              //*) continue ;;
+              *@*) continue ;;
+              *)
+                echo "::error file=extensions.txt::malformed line: $line"
+                hit=1
+                ;;
+            esac
+          done < extensions.txt
+          exit "$hit"
