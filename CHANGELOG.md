@@ -14,3 +14,8 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Initial release: an extension list and a recommended hotkey scheme for Raycast
 - Setup, reference and extension guides
 - CI that checks the extension list format
+- `ACCESSIBILITY.md`: how the hotkey scheme stays consistent and easy to remember.
+
+### Changed
+
+- Tidied code comments and the contributor guide.

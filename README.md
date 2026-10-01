@@ -28,6 +28,7 @@ Full walkthrough, including why hotkeys have to be entered by hand rather than i
 
 | Path | Contents |
 | --- | --- |
+| [`ACCESSIBILITY.md`](ACCESSIBILITY.md) | How the hotkey scheme stays consistent and easy to remember |
 | [`extensions.txt`](extensions.txt) | The extension list |
 | [`hotkeys.md`](hotkeys.md) | The recommended hotkey scheme |
 | [`guides/`](guides/) | Setup walkthrough, reference and per-extension detail |
