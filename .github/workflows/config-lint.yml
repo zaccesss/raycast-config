@@ -1,6 +1,6 @@
 name: Config Lint
 
-# Checks that every extension line is slug@author or a // comment.
+# checks that every extension line is slug@author or a // comment.
 
 on:
   push:
