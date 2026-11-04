@@ -10,5 +10,3 @@ This repository's Raycast configuration has moved to the `apps/raycast` folder o
 
 > [!NOTE]
 > This repository is archived and read-only.
-
-![The first lines of hotkeys.md as they look in the Zacess Deep Contrast Dark theme](docs/images/preview.png)
